@@ -1,0 +1,485 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 10px; /* Space inside the container */
+  border-radius: 5px; /* Rounded edges for the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.search-container input {
+  border: none; /* Remove border for the input */
+  background: transparent; /* Ensure input blends with the container */
+  outline: none; /* Remove outline when focused */
+  flex: 1; /* Make the input take available space */
+  padding: 2px 0px; /* Add space inside the input */
+  font-size: 10px; /* Adjust font size */
+  color: #333; /* Text color */
+}
+
+.search-container input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.search-container button {
+  border: none; /* Remove border for the button */
+  background: transparent; /* Make button background transparent */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 18px; /* Adjust font size */
+  color: #333; /* Icon color */
+  margin-left: 100px; /* Space between input and button */
+}
+
+.banner {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.banner a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+nav > .category {
+    margin: -40px;
+    padding:-100px; /* No margin here */
+  }
+  
+  nav > .option {
+    margin:0;  /* No extra space around the option list */
+    padding: 0; /* No extra padding around the list */
+  }
+  
+  nav > .option li {
+    
+    margin-bottom: 15px;
+    list-style: none;
+    position: relative;
+    padding-left:10px;  /* Adjusted padding for list items */
+  }
+  
+  nav > .option li a {
+    list-style: none;
+    position: relative;
+    padding-left:-200px;/* Space between text and line */
+  }
+  
+  nav > .option li::after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: -205%;
+    width: 120%;
+    height: 130px;
+    width: 2px;
+    background-color: #ddd;
+  }
+  
+  /* Avoid unwanted space around text elements */
+  h1{
+    color: #152C5B;
+    font-size: 42px;
+    margin: 20px;  /* Remove margin from the text */
+    padding-left:75px; /* Remove padding */
+  }
+
+  p{
+    margin: 20px;  /* Remove margin from the text */
+    padding-left:75px;
+  }
+  
+  /* Remove margin or padding from the illustration */
+  .illustration {
+    margin: 0px;;
+    padding: 30px;
+  }
+  
+  .illustration img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 100px 15px 15px 15px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Flash Sales Section */
+.flash-sales {
+  padding: 50px 100px;
+  background-color: #fff;
+}
+
+.flash-sales h2 {
+  font-size: 28px;
+  color: #152C5B;
+  margin-bottom: 20px;
+}
+
+.flash-sales .highlight {
+  color: red;
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px 15px 15px 15px ;
+  box-shadow:  5px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Content Section */
+.product-card .content {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+}
+
+.product-card .text {
+  text-align: left; /* Align text to the left */
+}
+
+.product-card .content p{
+  margin-left: -70px;
+  color: #000;
+  font-size: 15px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0px;
+}
+
+.product-card .btn {
+  background-color: #152C5B;
+  color: #fff;
+  border: none;
+  margin-left: 150px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  font-size: 10px;
+  margin-top: -70px;
+}
+
+.product-card .btn:hover {
+  background-color: #333;
+}
+
+.view-all-btn {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: #152C5B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 510px;
+  cursor: pointer;
+}
+
+.view-all-btn:hover {
+  background-color: #333;
+}
+
+
+
+
+
+/* category_section */
+/* Categories Section Styling */
+.categories-section {
+  padding: 50px 100px;
+  background-color: #f9f9f9;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.category-text {
+  max-width: 50%;
+}
+
+.category-text h2 {
+  font-size: 28px;
+  color: #152C5B;
+  margin-bottom: 15px;
+}
+
+.category-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+/* Container for Size Buttons */
+.size-buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Add spacing around the buttons */
+}
+
+/* Circular Button Styling */
+.size-btn {
+  width: 80px; /* Adjust for size */
+  height: 80px; /* Keep it equal to width */
+  background-color: #152C5B;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  font-size: 14px; /* Font size for text */
+  text-align: center;
+  line-height: 80px; /* Matches the height for vertical centering */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.size-btn:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+
+.buy-btn {
+  background-color: #152C5B;
+  color: #fff;
+  border: none;
+  margin-top:50px ;
+  margin-left: 235px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #c0392b;
+}
+
+.category-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+ /* Explore Section */
+ .products-section {
+  padding: 50px 100px;
+  background-color: #fff;
+}
+
+.products-section h2 {
+  font-size: 28px;
+  color: #152C5B;
+  margin-bottom: 20px;
+}
+
+.products-section .highlight {
+  color: red;
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+ /* Footer Styling */
+ footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  /* padding: 40px 20px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1; /* Equal space for each section */
+  min-width: 200px; /* Minimum width for responsiveness */
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p{
+  margin-left: -75px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.8;
+  /* margin: 0; */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Ensures no elements spill out */
+  width: 100%; /* Adjust width to fit */
+  max-width: 300px; /* Optional: limit the maximum width */
+}
+
+.subscribe-box input {
+  flex: 1; /* Allows input to take most of the space */
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribe-box button {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe-box button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ddd; /* Slightly lighter shade on hover */
+}
+
