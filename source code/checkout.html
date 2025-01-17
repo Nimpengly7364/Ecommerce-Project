@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="checkout.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-XHxbdhrqLsYO3zMCLHjYUq2XL8hm9v2+XaVKvBz AlfaroQy8p/็็ AppComponent" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    Free shipping available on all order!
+    <a href="#" class="shop-now">ShopNow</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Charm</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+      </nav>
+      <div class="header-actions">
+        <input type="text" class="search-input" placeholder="What are you looking for?" />
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <img src="https://i.pinimg.com/736x/d4/2c/be/d42cbe5b01bd2cbd6363eb3eeb09ccb3.jpg" alt="User Profile"
+          class="profile-photo" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="about">
+    <p> <a href="http://127.0.0.1:5501/Home_page.html">Home/</a>About</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Billing Details -->
+    <div class="billing-details">
+      <h2>Billing Details</h2>
+      <form>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" placeholder="Payment card number" />
+        </div>
+        <div class="form-group">
+          <label for="bank">Bank</label>
+          <input type="text" id="bank" placeholder="Select Bank" />
+        </div>
+        <div class="form-group">
+          <label for="exp-date">Exp Date</label>
+          <input type="text" id="exp-date" placeholder="Validation date" />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="Beside the card" />
+        </div>
+        <div class="form-actions">
+          <button type="button" class="pay-now">Pay Now</button>
+          <button type="button" class="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/17/47/db/1747db296a7321735ac9dc11cec25038.jpg" alt="sticker">
+        <span>#0012</span>
+        <span class="price">$5</span>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/ce/b5/bf/ceb5bf4fe14fc7a9f8333b1c67709898.jpg" alt="keychain" />
+        <span>#0015</span>
+        <span class="price">$100</span>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/236x/e1/53/69/e153692661e79c318c70a392d3828e93.jpg" alt="ring" />
+        <span>#0034</span>
+        <span class="price">$30</span>
+      </div>
+      <div class="summary">
+        <div class="subtotal">
+          <span>Subtotal:</span>
+          <span>$135</span>
+        </div>
+        <div class="shipping">
+          <span>Shipping:</span>
+          <span>$2</span>
+        </div>
+        <div class="total">
+          <span>Total:</span>
+          <span>$137</span>
+        </div>
+      </div>
+      <div class="payment-methods">
+        <label>
+          <input type="radio" name="payment-method" />
+          Bank
+        </label>
+        <label>
+          <input type="radio" name="payment-method" checked />
+          Cash on delivery
+        </label>
+      </div>
+      <button class="place-order">Place Order</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>Exclusive</h3>
+        <ul>
+          <li><a href="#">Subscribe</a></li>
+          <li><a href="#">Get 10% off your first order</a></li>
+          <li><a href="#">
+              <div class="subscribe">
+                <input type="email" placeholder="Enter your email">
+                <button>➤</button>
+              </div>
+            </a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Phnom Penh, Cambodia</a></li>
+          <li><a href="#">charm@gmail.com</a></li>
+          <li><a href="#">+855 92124229</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login / Register</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

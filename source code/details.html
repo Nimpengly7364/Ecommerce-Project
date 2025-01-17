@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Charm</title>
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+    <header>
+        <header>
+            <div class="banner">Free shipping available on all orders! <a href="#">Shop Now</a></div>
+            <nav>
+              <div class="logo">Charm</div>
+              <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+              <div class="search-container">
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit"class="fa fa-search"></button>
+              </div>
+
+              <div class="icon-container">
+                <a href="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" class="love-icon"><i class="fa fa-heart"></i></a>
+                <div class="dropdown-container">
+                  <i class="fa fa-bars dropdown-icon"></i>
+                  <div class="dropdown-menu">
+                    <a href="#">Profile</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+              
+            </nav>
+        </header>
+    </header>
+
+    <div class="about">
+        <p> <a href="home.html">Home/</a>Detail</p>       
+     </div>
+
+     <!-- Product Card Section -->
+     <div class="product-section">
+      <div class="image-container">
+        <img src="Image/Keychain_BLUESTAR.jpg" alt="Product Image">
+      </div>
+    
+      <div class="product-card">
+        <h1 class="product-title">BLUE STAR</h1>
+        <p class="product-price">$10.00</p>
+        
+        <hr class="info-divider">
+
+        <div class="quantity-controls">
+          <div class="wrapper">
+            <span class="minus">-</span>
+            <span class="num">01</span>
+            <span class="plus">+</span>
+          </div>
+          <script>
+           const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+            let a = 1;
+            plus.addEventListener("click", ()=>{
+              a++;
+              a = (a < 10) ? "0" + a : a;
+              num.innerText = a;
+            });
+            minus.addEventListener("click", ()=>{
+              if(a > 1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+              }
+            });
+          </script>
+          <button class="buy-now">Buy Now</button>
+          <button class="wishlist-btn">♡</button>
+        </div>
+
+        <div class="info-box">
+          <div class="info-item">
+            <img src="Image/Z-delivery_icon.jpg" alt="Free Delivery" class="info-icon">
+            <div class="info-text">
+              <strong>Free Delivery</strong>
+              <p>Enter your postal code for Delivery Availability</p>
+            </div>
+          </div>
+          <hr class="info-divider">
+          <div class="info-item">
+            <img src="Image/Z_money_back_icon.jpg" alt="Return Delivery" class="info-icon">
+            <div class="info-text">
+              <strong>Return Delivery</strong>
+              <p>Free 30 Days Delivery Returns. <a href="#">Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section class="products-section"> 
+    <h2>Related<span class="highlight"><br>Category</span></h2>
+    <div class="products-grid">   
+      <div class="product-card">
+        <img src="Image/Keychain_JELLYFISH.jpg" alt="JELLYFISH">
+        <div class="content">
+          <div class="text">
+            <h3>JELLYFISH</h3>
+            <p>$10</p>
+          </div>
+        </div>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="Image/Keychain_TOTORO.jpg" alt="Totoro">
+        <div class="content">
+          <div class="text">
+            <h3>Totoro</h3>
+            <p>$10</p>
+          </div>
+        </div>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="Image/Keychain_COUPLE_CATS.jpg" alt="COUPLE CATS">
+        <div class="content">
+          <div class="text">
+            <h3>COUPLE CATS</h3>
+            <p>$10</p>
+          </div>
+        </div>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="Image/Keychain_BLUESTAR.jpg" alt="BLUE STAR">
+        <div class="content">
+          <div class="text">
+            <h3>BLUE STAR</h3>
+            <p>$10</p>
+          </div>
+        </div>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <!-- <button class="view-all-btn"><a href="cate/view_all_product.html">View All Products</a></button> -->
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Exclusive</h3>
+          <p>Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email">
+            <button>➤</button>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <p>Phnom Penh, Cambodia</p>
+          <p>charm@gmail.com</p>
+          <p>+855 92124229</p>
+        </div>
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact us</h3>
+          <div class="social-links">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <a href="#" class="fa fa-instagram"></a>    
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

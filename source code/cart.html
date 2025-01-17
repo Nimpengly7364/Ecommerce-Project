@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-text">
+                Free shipping available on all orders! <a href="#">ShopNow</a>
+            </div>
+            <div class="language-select">
+                <select>
+                    <option value="en" selected>English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">Charm</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5501/About.html">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit" class="fa fa-search"></button>
+            </div>
+
+            <div class="icon-container">
+                <a href="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" class="love-icon"><i class="fa fa-heart"></i></a>
+                <div class="dropdown-container">
+                    <i class="fa fa-bars dropdown-icon"></i>
+                    <div class="dropdown-menu">
+                        <a href="#">Profile</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <div>
+            <span class="breadcrumb-home">Home</span>
+            <span>/</span>
+            <span>Cart</span>
+        </div>
+        <h1 class="cart-header">Your Cart</h1>
+
+
+        <div class="bg-blue">
+          <table class="cart-table">
+              <thead>
+                  <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Subtotal</th>
+                  </tr>
+              </thead>
+              <tbody id="cart-table-body">
+                  <!-- Product 1 -->
+                  <tr>
+                      <td>
+                          <div class="product-info">
+                              <img src="image/keychain9.jpg" alt="Keychain" class="product-image">
+                              #001 - Keychain
+                          </div>
+                      </td>
+                      <td>$5</td>
+                      <td><input type="number" value="4" class="quantity-input" min="1" title="Quantity"></td>
+                      <td>$20</td>
+                  </tr>
+                  <!-- Product 2 -->
+                  <tr>
+                      <td>
+                          <div class="product-info">
+                              <img src="image/pin3.jpg" alt="Pin" class="product-image">
+                              #002 - Pin
+                          </div>
+                      </td>
+                      <td>$10</td>
+                      <td><input type="number" value="2" class="quantity-input" min="1" title="Quantity"></td>
+                      <td>$20</td>
+                  </tr>
+                  <!-- Product 3 -->
+                  <tr>
+                      <td>
+                          <div class="product-info">
+                              <img src="image/sticker6.jpg" alt="Stickers" class="product-image">
+                              #003 - Stickers
+                          </div>
+                      </td>
+                      <td>$10</td>
+                      <td><input type="number" value="10" class="quantity-input" min="1" title="Quantity" placeholder="Enter quantity"></td>
+                      <td>$100</td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <div class="actions">
+              <button class="return-button">Return to shop</button>
+              <button class="update-button">Update Cart</button>
+          </div>
+      </div>
+
+      <div class="cart-summary">
+          <h3>Cart Total</h3>
+          <p><strong>Subtotal:</strong> $140</p>
+          <p><strong>Shipping:</strong> $2</p>
+          <p><strong>Total:</strong> $142</p>
+          <button class="checkout-button">Proceed to Checkout</button>
+      </div>
+  </div>
